@@ -1,0 +1,19 @@
+@import "../../../assets/index.scss";
+
+.header{
+    width: 98%;
+    padding: 0 1% 0 1%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $black;
+    border-bottom: 1px solid $base_separator_line;
+    &__item{
+        width: 40px;
+        height: 40px;
+        text-indent: -9999px;     
+        border-radius: 100%;
+        background-color: $base_color_twitter;
+    }
+}

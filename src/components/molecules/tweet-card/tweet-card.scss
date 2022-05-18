@@ -1,0 +1,65 @@
+@import "../../../assets/index.scss";
+
+.card {
+    width: 100%;
+    padding-top: 12px;
+    border-bottom: 1px solid $base_separator_line;
+
+    .card-wrapper {
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        flex-flow: wrap;
+
+        &__image {
+            flex-basis: 50px;
+            margin-right: 10px;
+
+            img {
+                width: 100%;
+                border-radius: 100%;
+            }
+        }
+
+        &__content {
+            flex-basis: 0;
+            flex-grow: 1;
+
+            .card-wrapper__header {
+                display: inline;
+
+                &.name {
+                    display: inline;
+                    @include textstyle($white, $helvetica-medium, 0.938rem, 700);
+                    text-decoration: none;
+                    line-height: 20px;
+                }
+
+                &.username {
+                    display: inline;
+                    @include textstyle($base_text_tweet_gray, $helvetica-medium, 0.938rem, 400);
+                    line-height: 20px;
+                    margin-left: 4px;
+                    -webkit-box-direction: normal;
+                    -webkit-box-orient: horizontal;
+                    flex-direction: row;
+                    flex-shrink: 1;
+                }
+
+                &.timeago {
+                    display: inline;
+                    @include textstyle($base_text_tweet_gray, $helvetica-medium, 0.938rem, 400);
+                    line-height: 20px;
+                }
+            }
+
+            .card-wrapper__body {
+                &.text {
+                    display: inline;
+                    @include textstyle($white, $helvetica-medium, 0.938rem, 400);
+                    line-height: 20px;
+                }
+            }
+        }
+    }
+}

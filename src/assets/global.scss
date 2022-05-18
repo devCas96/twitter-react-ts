@@ -1,0 +1,16 @@
+@import "./index.scss";
+
+#root{
+    background-color: $black;
+    color: $white;
+}
+
+.page{
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: $black;
+    min-height: 100vh;
+    border-left: 1px solid $base_separator_line;
+    border-right: 1px solid $base_separator_line;
+}
